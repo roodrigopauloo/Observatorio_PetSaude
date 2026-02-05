@@ -23,7 +23,9 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-shrink: 0; 
+    justify-content: flex-start;
+    flex-shrink: 0;
+    gap: 800px;
 }
 
 .sidebar h1 {
@@ -58,7 +60,7 @@ body {
 .menu-item.active {
     background-color:transparent; 
     font-weight: bold;
-    border-bottom: 1px solid #2563eb;
+    border-bottom: 2px solid #f56613;
 }
 
 .main-content {
@@ -95,4 +97,10 @@ body {
 .chart-placeholder strong {
     font-size: 18px;
     color: #475569;
+}
+
+.minha-logo {
+    height: 60px; 
+    width: auto;
+    margin-right: 10px;
 }
