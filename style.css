@@ -73,31 +73,24 @@ body {
 
 .dashboard-container {
     background: white;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 9px;
+    border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     
     flex: 1; 
     display: flex;
     flex-direction: column;
-}
-
-.chart-placeholder {
-    flex: 1; 
-    border: 2px dashed #cbd5e1;
+    overflow: hidden;
     border-radius: 8px;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    background-color: #f8fafc;
-    color: #64748b;
-    text-align: center;
 }
 
-.chart-placeholder strong {
-    font-size: 18px;
-    color: #475569;
+metabase-dahsboard{
+    width: 1000%;
+    height: 100%;
+    display: block;
+    border: none;
 }
+
 
 .minha-logo {
     height: 60px; 
