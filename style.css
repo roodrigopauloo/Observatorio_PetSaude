@@ -25,7 +25,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     flex-shrink: 0;
-    gap: 800px;
+    gap: 900px;
 }
 
 .sidebar h1 {
@@ -37,7 +37,7 @@ body {
     margin-right: 40px;
 }
 
-.sidebar nav{
+.sidebar nav {
     display: flex;
     gap: 20px;
 }
@@ -58,42 +58,89 @@ body {
 }
 
 .menu-item.active {
-    background-color:transparent; 
+    background-color: transparent; 
     font-weight: bold;
     border-bottom: 2px solid #f56613;
 }
-
-.main-content {
-    flex: 1; 
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-}
-
-.dashboard-container {
-    background: white;
-    padding: 9px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-metabase-dahsboard{
-    width: 1000%;
-    height: 100%;
-    display: block;
-    border: none;
-}
-
 
 .minha-logo {
     height: 60px; 
     width: auto;
     margin-right: 10px;
+}
+
+.main-content {
+    flex: 1; 
+    padding: 20px;
+    display: flex;    
+    flex-direction: column; 
+    gap: 20px;
+    overflow-y: auto; 
+}
+
+.dashboard-container {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    flex: 1; 
+    display: flex;
+    width: 100%;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px; 
+}
+
+.dashboard-container iframe, 
+.dashboard-container img {
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: contain;
+}
+
+.footer {
+    background-color: #002c72; 
+    color: white;
+    padding: 15px 40px;
+    flex-shrink: 0; 
+    display: flex;
+    justify-content: center;
+
+    margin-left: -20px;  
+    margin-right: -20px;  
+    margin-bottom: -20px; 
+    margin-top: 20px; 
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f56613; 
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
 }

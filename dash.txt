@@ -1,0 +1,38 @@
+    <section class="dashboard-container">
+        <iframe
+            src=""
+            frameborder="0"
+            width="100%"
+            height="100%"
+            allowtransparency
+        ></iframe>
+    </section>
+
+    .dashboard-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+
+.dashboard-container1 {
+    background: white;
+    padding: 9px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+
+metabase-dahsboard{
+    width: 1000%;
+    height: 100%;
+    display: block;
+    border: none;
+}
