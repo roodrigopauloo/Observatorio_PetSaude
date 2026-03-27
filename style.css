@@ -101,9 +101,7 @@ body {
     object-fit: contain;
 }
 
-/* =========================================
-   ESTILOS DO NOVO RODAPÉ (FOOTER)
-========================================= */
+
 
 .footer {
     width: calc(100%+40%);
@@ -116,9 +114,8 @@ body {
     margin-top: 40px; 
 }
 
-/* --- Parte Superior Azul --- */
 .footer-top {
-    background-color: #002c72; /* O azul da sua logo */
+    background-color: #002c72; 
     color: white;
     display: flex;
     justify-content: space-between;
@@ -142,7 +139,6 @@ body {
 .footer-col ul {
     list-style: none;
     padding-left: 15px; 
-    /* Esta é a linha vertical à esquerda dos links, igual à da imagem */
     border-left: 1px solid rgba(255, 255, 255, 0.2); 
     display: flex;
     flex-direction: column;
@@ -157,12 +153,13 @@ body {
 }
 
 .footer-col ul li a:hover {
-    color: #f56613; /* Fica laranja (sua cor) ao passar o mouse */
+    color: #f56613; 
 }
 
-/* --- Parte Inferior Preta --- */
+/* Inferior */
+
 .footer-bottom {
-    background-color: #1a1a1a; /* Cinza bem escuro/preto da imagem */
+    background-color: #1a1a1a; 
     color: #a0a0a0;
     padding: 20px 60px;
 }
@@ -186,7 +183,7 @@ body {
     color: white;
 }
 
-/* --- Responsividade para Celulares --- */
+/* Responsividade para Celulares */
 @media (max-width: 768px) {
     .footer-top {
         flex-direction: column;
