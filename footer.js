@@ -40,7 +40,7 @@ const footerHTML = `
         <div class="footer-bottom">
             <div class="footer-bottom-content">
                 <span class="copyright">
-                    &copy; <span id="ano-atual"></span> Observatório PetSaúde Digital. Iniciativa vinculada ao Ministério da Saúde.
+                    &copy; <span id="ano-atual"></span> Observatório PetSaúde Digital.
                 </span>
                 <a href="#" class="privacy-policy">Política de Privacidade</a>
             </div>
@@ -49,9 +49,39 @@ const footerHTML = `
     </footer>  
 `;
 
+
+
 // 1. Insere o rodapé dentro da div no HTML
 document.getElementById('footer-container').innerHTML = footerHTML;
 
 // 2. Truque para atualizar o ano automaticamente
 const anoAtual = new Date().getFullYear();
 document.getElementById('ano-atual').innerText = anoAtual;
+
+// =========================================
+// BOTÃO VOLTAR AO TOPO GLOBAL
+// =========================================
+
+// Cria o botão dinamicamente
+const btnTopo = document.createElement('button');
+btnTopo.innerHTML = '↑'; // Seta para cima
+btnTopo.className = 'back-to-top';
+btnTopo.setAttribute('title', 'Voltar ao topo');
+document.body.appendChild(btnTopo);
+
+// Mostra o botão apenas se o usuário rolar mais de 300px para baixo
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        btnTopo.classList.add('show');
+    } else {
+        btnTopo.classList.remove('show');
+    }
+});
+
+// Ação de clique para voltar ao topo suavemente
+btnTopo.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Faz a rolagem ser suave e não "seca"
+    });
+});

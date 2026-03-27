@@ -1,10 +1,10 @@
 const menuHTML = `
     <aside class="sidebar">        
-        <img src="logoPet.png" alt="Logo" class="minha-logo">
+        <img src="vetor_pet.png" alt="Logo" class="minha-logo">
         <nav>
             <a href="index.html" class="menu-item">Visão Geral</a>
             <a href="gat.html" class="menu-item">GAT6</a>
-            <a href="" class="menu-item">Indicadores</a>
+            <a href="indicadores.html" class="menu-item">Indicadores</a>
             <a href="sobre.html" class="menu-item">Sobre</a>
         </nav>
     </aside>

@@ -3,33 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Observatório PetSaúde</title>
+    <title>Sobre - Observatório Digital GAT6</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <aside class="sidebar">        
-        <img src="logoPet.png" alt="Logo" class="minha-logo">
-        <nav>
-            <a href="index.html" class="menu-item">Visão Geral</a>
-            <a href="sobre.html" class="menu-item active">Sobre</a>
-        </nav>
-    </aside>
+    <div id="menu-container"></div>
+    <script src="menu.js"></script>
 
-    <main class="main-content">
+    <main class="main-content" style="margin-top: 20px;"> 
         
-        <section class="dashboard-container" style="min-height: auto; padding: 40px; align-items: flex-start;">
-            <h2 style="color: #002c72; margin-bottom: 20px;">Sobre o Observatório PetSaúde</h2>
-            
-            <p>Aqui você pode digitar a história do projeto, quem faz parte da equipe, os objetivos da UFCG com essa iniciativa, etc.</p>
-            <br>
-            <p>Você pode adicionar mais parágrafos, imagens ou o que for necessário aqui dentro desta section.</p>
+        <section class="gat-header">
+            <div class="gat-title-area">
+                <h2>Observatório Digital do GAT6 <br> <span style="font-size: 20px; color: #f56613;">PET Saúde Digital UFCG</span></h2>
+            </div>
+            <p class="gat-description" style="font-size: 16px;">
+                O Observatório Digital do GAT6 é um ambiente digital interno, concebido e operado exclusivamente pelo próprio Grupo de Atuação Tutorial (GAT). Seu foco é monitorar, analisar e sistematizar as ações de Educação Permanente em Saúde Digital desenvolvidas no projeto, apoiando a gestão, a avaliação contínua e a produção de evidências para o SUS.
+            </p>
         </section>
 
-        <div id="footer-container"></div>
-        <script src="footer.js"></script> 
+        <div class="gat-grid" style="margin-bottom: 30px;">
+            
+            <section class="gat-card">
+                <h3> Objetivo Geral</h3>
+                <p style="line-height: 1.6; color: #555;">
+                    Acompanhar e avaliar, de forma sistemática, as ações e resultados do GAT6 no âmbito da Educação Permanente em Saúde Digital, utilizando dados e indicadores para subsidiar decisões, aprimorar estratégias formativas e dar transparência às atividades do projeto.
+                </p>
+            </section>
+
+            <section class="gat-card">
+                <h3>Objetivos Específicos</h3>
+                <ul class="sobre-list">
+                    <li>Monitorar a execução das metas e ações do GAT6;</li>
+                    <li>Registrar e analisar dados relacionados à formação do público-alvo e dos integrantes do PET;</li>
+                    <li>Avaliar o alcance, a qualidade e os resultados das ações formativas;</li>
+                    <li>Apoiar o planejamento e a reorientação das atividades do grupo;</li>
+                    <li>Sistematizar informações para relatórios, apresentações e prestação de contas.</li>
+                </ul>
+            </section>
+
+        </div>
+
+        <h3 class="section-title" style="margin-bottom: 15px;">Eixos de Atuação</h3>
+        <div class="eixos-grid">
+            
+            <div class="eixo-card">
+                <div class="eixo-numero">1</div>
+                <h4>Planejamento e Diagnóstico</h4>
+                <ul class="eixo-list">
+                    <li>Registro do diagnóstico situacional das necessidades formativas;</li>
+                    <li>Sistematização das demandas identificadas;</li>
+                    <li>Acompanhamento do alinhamento entre diagnóstico e ações ofertadas.</li>
+                </ul>
+            </div>
+
+            <div class="eixo-card">
+                <div class="eixo-numero">2</div>
+                <h4>Formação e Capacitação em Saúde Digital</h4>
+                <ul class="eixo-list">
+                    <li>Monitoramento da criação e oferta de cursos;</li>
+                    <li>Acompanhamento da disponibilização de cursos e materiais na plataforma digital;</li>
+                    <li>Análise da participação, conclusão e certificação dos cursistas.</li>
+                </ul>
+            </div>
+
+            <div class="eixo-card">
+                <div class="eixo-numero">3</div>
+                <h4>Formação e Engajamento dos Integrantes do PET</h4>
+                <ul class="eixo-list">
+                    <li>Registro das capacitações internas do GAT6;</li>
+                    <li>Monitoramento da aplicação de metodologias ativas;</li>
+                    <li>Avaliação do engajamento nas atividades teórico-práticas.</li>
+                </ul>
+            </div>
+
+            <div class="eixo-card">
+                <div class="eixo-numero">4</div>
+                <h4>Inovação e Produção do GAT</h4>
+                <ul class="eixo-list">
+                    <li>Registro de soluções, propostas e produtos desenvolvidos;</li>
+                    <li>Sistematização de boas práticas e experiências exitosas;</li>
+                    <li>Análise da aderência das soluções às necessidades do SUS.</li>
+                </ul>
+            </div>
+
+            <div class="eixo-card">
+                <div class="eixo-numero">5</div>
+                <h4>Gestão, Avaliação e Transparência</h4>
+                <ul class="eixo-list">
+                    <li>Acompanhamento dos indicadores do projeto;</li>
+                    <li>Geração de relatórios e painéis de monitoramento;</li>
+                    <li>Registro histórico das ações e resultados do GAT6.</li>
+                </ul>
+            </div>
+
+        </div>
 
     </main> 
+    
+    <div id="footer-container"></div>
+    <script src="footer.js"></script>
 
 </body>
 </html>
