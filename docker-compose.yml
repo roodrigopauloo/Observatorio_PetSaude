@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  observatorio-gat6:
+    build: .
+    container_name: observatorio_web
+    restart: unless-stopped
+    ports:
+      - "8080:80"
