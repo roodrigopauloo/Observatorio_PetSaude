@@ -12,6 +12,63 @@
     <script src="menu.js"></script>
     
     <main class="main-content">
+
+        <section class="hero-carousel-section">
+            <div class="hero-carousel-wrapper">
+                
+                <button class="carousel-arrow prev-arrow" id="prevBtn">&#10094;</button>
+
+                <div class="hero-carousel" id="heroCarousel">
+                    
+                    <a href="#" class="hero-slide">
+
+                        <img src="https://via.placeholder.com/1200x500/002c72/ffffff?text=Imagem+Noticia+1" alt="Notícia 1">
+
+                        <span class="hero-tag">GAT1</span>
+
+                        <div class="hero-overlay">
+                            <span class="hero-date">21 Abril, 2026</span>
+                            <h3 class="hero-title">GAT 6 lança nova plataforma de indicadores para o SUS</h3>
+                            <p class="hero-desc">O Observatório Digital agora conta com vários dashboards interativos.</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="hero-slide">
+                        <img src="https://via.placeholder.com/1200x500/17a2b8/ffffff?text=Imagem+Noticia+2" alt="Notícia 2">
+
+                        <span class="hero-tag">GAT2</span>
+
+                        <div class="hero-overlay">
+                            <span class="hero-date">15 Abril, 2026</span>
+                            <h3 class="hero-title">Capacitação em Telessaúde atinge meta de 100% nas UBS</h3>
+                            <p class="hero-desc">A equipe do PET Saúde Digital concluiu o ciclo de formação voltado para os profissionais da atenção básica.</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="hero-slide">
+                        <img src="https://via.placeholder.com/1200x500/f56613/ffffff?text=Imagem+Noticia+3" alt="Notícia 3">
+
+                        <span class="hero-tag">GAT3</span>
+
+                        <div class="hero-overlay">
+                            <span class="hero-date">02 Abril, 2026</span>
+                            <h3 class="hero-title">Publicação do Diagnóstico Situacional das Necessidades</h3>
+                            <p class="hero-desc">Confira o relatório completo com a sistematização das demandas identificadas na rede de saúde.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <button class="carousel-arrow next-arrow" id="nextBtn">&#10095;</button>
+
+                <div class="carousel-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+
+            </div>
+        </section>
         
         <section class="dashboard-container">
             <iframe
@@ -36,6 +93,7 @@
 
         <div id="footer-container"></div>
         <script src="footer.js"></script> 
+        <script src="carousel.js"></script>
 
     </main> 
 

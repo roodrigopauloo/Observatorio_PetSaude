@@ -1,11 +1,17 @@
 const menuHTML = `
     <aside class="sidebar">        
-        <img src="vetor_pet.png" alt="Logo" class="minha-logo">
+        <div class="logo-container">
+            <img src="logoPet.png" alt="Logo" class="minha-logo">
+            <span class="logo-text">Fortalecimento e aprimoramento da Saúde Digital:<br>Educação, Inovação e Gestão para o SUS</span>
+        </div>
         <nav>
-            <a href="index.html" class="menu-item">Visão Geral</a>
-            <a href="gat.html" class="menu-item">GAT6</a>
-            <a href="indicadores.html" class="menu-item">Indicadores</a>
-            <a href="sobre.html" class="menu-item">Sobre</a>
+            <a href="index.html" class="menu-item">HOME</a>
+            <a href="gat.html" class="menu-item">GAT's</a>
+            <a href="sobre.html" class="menu-item">SOBRE NÓS</a>
+            <a href="" class="menu-item">NOTÍCIAS</a>
+            <a href="indicadores.html" class="menu-item">INDICADORES</a>
+            
+
         </nav>
     </aside>
 `;

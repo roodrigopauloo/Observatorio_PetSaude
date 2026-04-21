@@ -16,7 +16,7 @@ body {
 .sidebar {
     width: 100%;
     height: 100px;
-    background-color: #002c72; 
+    background-color: #f3f4f6; 
     color: white;
     padding: 0 40px;
     display: flex;
@@ -49,11 +49,11 @@ body {
     font-size: 15px;
     white-space: nowrap;
     text-decoration: none; 
-    color: white;
+    color: #002c72;
 }
 
 .menu-item:hover {
-    color: white;
+    color: #f56613;
     background-color: transparent;
 }
 
@@ -63,10 +63,26 @@ body {
     border-bottom: 2px solid #f56613;
 }
 
+/* Estilo de Logo + Texto Sidebar */
+
 .minha-logo {
-    height: 90px; 
+    height: 60px; 
     width: auto;
-    margin-right: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    margin-bottom: 2px; 
+    padding: 0 10px; 
+}
+
+/* Estilo do texto ao lado da logo */
+.logo-text {
+    font-size: 18px;
+    color: #002c72; 
+    line-height: 1.2;
 }
 
 .main-content {
@@ -573,4 +589,207 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 600;
+}
+
+/* =========================================
+   CARROSSEL HERO (Ocupando toda a largura)
+========================================= */
+
+.hero-carousel-section {
+    /* Faz o carrossel "vazar" o padding da main-content para encostar nas bordas */
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -20px; /* Sobe para colar no menu */
+    width: calc(100% + 40px);
+    margin-bottom: 30px;
+}
+
+.hero-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; /* Obriga a parar exatamente num card */
+    /* Esconde a barra de rolagem nativa para um visual mais limpo */
+    scrollbar-width: none; 
+}
+.hero-carousel::-webkit-scrollbar {
+    display: none; 
+}
+
+.hero-slide {
+    position: relative; /* Necessário para o texto flutuar por cima */
+    min-width: 100%; /* Cada slide ocupa 100% da tela */
+    height: 450px; /* Altura fixa do banner. Pode aumentar ou diminuir se quiser */
+    display: block;
+    text-decoration: none;
+    scroll-snap-align: start; /* Onde a rolagem deve "travar" */
+    overflow: hidden;
+}
+
+.hero-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem preencher tudo sem amassar */
+    transition: transform 0.5s ease;
+}
+
+.hero-slide:hover img {
+    transform: scale(1.05); /* Zoom sutil e elegante ao passar o mouse */
+}
+
+/* A caixa preta translúcida que fica por cima da imagem */
+.hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Degrade do preto quase sólido embaixo para transparente em cima */
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);
+    padding: 60px 40px 50px 40px; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hero-date {
+    font-size: 13px;
+    color: #f56613; /* Laranja GAT6 */
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.hero-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Sombra no texto para leitura extra */
+}
+
+.hero-desc {
+    font-size: 16px;
+    color: #e0e0e0;
+    line-height: 1.5;
+    max-width: 800px; /* Evita que o texto fique comprido demais em telas enormes */
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    .hero-slide {
+        height: 350px;
+    }
+    .hero-overlay {
+        padding: 40px 20px 20px 20px;
+    }
+    .hero-title {
+        font-size: 22px;
+    }
+    .hero-desc {
+        font-size: 14px;
+    }
+}
+
+/* CONTROLES DO CARROSSEL (Setas e Bolinhas)*/
+
+/* Container para segurar as setas por cima da imagem */
+.hero-carousel-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Setas Minimalistas (Apenas o ícone) */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: rgba(255, 255, 255, 0.6); 
+    border: none;
+    font-size: 45px; 
+    cursor: pointer;
+    z-index: 10;
+    padding: 0 15px; 
+    transition: color 0.3s, transform 0.2s;
+    outline: none;
+    font-family: sans-serif;
+}
+
+.carousel-arrow:hover {
+    color: #ffffff; 
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev-arrow {
+    left: 10px;
+}
+
+.next-arrow {
+    right: 10px;
+}
+
+/* Estilo das Bolinhas (Dots) */
+.carousel-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 10;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.4); 
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.dot:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.dot.active {
+    background: #ffffff; /* Bolinha branca quando ativa */
+    transform: scale(1.4); 
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 600px) {
+    .carousel-arrow {
+        display: none; 
+    }
+}
+
+/* Tag GAT*/
+
+.hero-tag {
+    position: absolute;
+    top: 40px; /* Distância do topo do carrossel */
+    left: 0; /* Colado na margem esquerda, igual na imagem de referência */
+    background-color: #f56613; /* Cor Laranja Oficial */
+    color: white;
+    padding: 8px 25px; /* Altura e largura do retângulo */
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 15; /* Garante que fique acima da imagem */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Sombra suave para destacar */
+}
+
+/* Ajuste para telas de celular */
+@media (max-width: 768px) {
+    .hero-tag {
+        top: 20px;
+        padding: 6px 15px;
+        font-size: 12px;
+    }
 }
