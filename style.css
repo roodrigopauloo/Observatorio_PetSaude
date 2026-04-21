@@ -64,7 +64,17 @@ body {
 .menu-item.active {
     background-color: transparent; 
     font-weight: bold;
-    border-bottom: 2px solid #f56613;
+    color: #f56613; 
+}
+
+.menu-item:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 1px; 
+    height: 25px; 
+    background-color:#002c72; 
+    margin-left: 15px; 
+    vertical-align: middle;
 }
 
 /* Estilo de Logo + Texto Sidebar */
