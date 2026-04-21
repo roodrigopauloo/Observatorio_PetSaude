@@ -8,7 +8,7 @@ const menuHTML = `
             <a href="index.html" class="menu-item">HOME</a>
             <a href="gat.html" class="menu-item">GAT's</a>
             <a href="sobre.html" class="menu-item">SOBRE NÓS</a>
-            <a href="" class="menu-item">NOTÍCIAS</a>
+            <a href="noexist.html" class="menu-item">NOTÍCIAS</a>
             <a href="indicadores.html" class="menu-item">INDICADORES</a>
             
 
