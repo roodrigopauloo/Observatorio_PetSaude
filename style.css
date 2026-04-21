@@ -24,8 +24,8 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-shrink: 0;
-
-    border-bottom: 2px solid #f56613; /* Linha sutil abaixo do menu para separar do conteúdo */
+    /* linha abaixo do menu */
+    border-bottom: 2px solid #f56613; 
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     z-index: 20; 
 }
@@ -595,9 +595,7 @@ body {
     font-weight: 600;
 }
 
-/* =========================================
-   CARROSSEL HERO (Ocupando toda a largura)
-========================================= */
+/* Carrosel */
 
 .hero-carousel-section {
     /* Faz o carrossel "vazar" o padding da main-content para encostar nas bordas */
@@ -697,8 +695,6 @@ body {
     }
 }
 
-/* CONTROLES DO CARROSSEL (Setas e Bolinhas)*/
-
 /* Container para segurar as setas por cima da imagem */
 .hero-carousel-wrapper {
     position: relative;
@@ -706,7 +702,7 @@ body {
     overflow: hidden;
 }
 
-/* Setas Minimalistas (Apenas o ícone) */
+/* Setas */
 .carousel-arrow {
     position: absolute;
     top: 50%;
@@ -736,7 +732,7 @@ body {
     right: 10px;
 }
 
-/* Estilo das Bolinhas (Dots) */
+/* Estilo das Bolinhas */
 .carousel-dots {
     position: absolute;
     bottom: 15px;
