@@ -51,16 +51,12 @@ const footerHTML = `
 
 
 
-// 1. Insere o rodapé dentro da div no HTML
 document.getElementById('footer-container').innerHTML = footerHTML;
 
-// 2. Truque para atualizar o ano automaticamente
 const anoAtual = new Date().getFullYear();
 document.getElementById('ano-atual').innerText = anoAtual;
 
-// =========================================
-// BOTÃO VOLTAR AO TOPO GLOBAL
-// =========================================
+// Botão retornar ao topo
 
 // Cria o botão dinamicamente
 const btnTopo = document.createElement('button');
@@ -82,6 +78,6 @@ window.addEventListener('scroll', () => {
 btnTopo.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
-        behavior: 'smooth' // Faz a rolagem ser suave e não "seca"
+        behavior: 'smooth' 
     });
 });
