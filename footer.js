@@ -5,8 +5,7 @@ const footerHTML = `
             <div class="footer-col">
                 <h4>O Observatório</h4>
                 <ul>
-                    <li><a href="index.html">Visão Geral</a></li>
-                    <li><a href="#">Os 10 GATs</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">Ações e Resultados</a></li>
                     <li><a href="#">Publicações</a></li>
                 </ul>
@@ -20,6 +19,23 @@ const footerHTML = `
                     <li><a href="#">Ministério da Saúde</a></li>
                 </ul>
             </div>
+
+            <div class="footer-col">
+                <h4>GAT's</h4>
+                <ul class="two-columns">
+                    <li><a href="sobre.html">GAT 1</a></li>
+                    <li><a href="sobre.html">GAT 2</a></li>
+                    <li><a href="sobre.html">GAT 3</a></li>
+                    <li><a href="sobre.html">GAT 4</a></li>
+                    <li><a href="sobre.html">GAT 5</a></li>
+                    <li><a href="sobre.html">GAT 6</a></li>
+                    <li><a href="sobre.html">GAT 7</a></li>
+                    <li><a href="sobre.html">GAT 8</a></li>
+                    <li><a href="sobre.html">GAT 9</a></li>
+                    <li><a href="sobre.html">GAT 10</a></li>
+                </ul>
+            </div>
+
             
             <div class="footer-col">
                 <h4>Participe</h4>
