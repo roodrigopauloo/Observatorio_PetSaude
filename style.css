@@ -803,3 +803,79 @@ body {
         font-size: 12px;
     }
 }
+
+/* Carrosel GATs home  */
+
+.gat-cards-section {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.gat-cards-section .section-title {
+    color: #002c72;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.gat-cards-carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 15px; /* Espaço para não cortar a sombra e a barra de rolagem */
+    scroll-behavior: smooth;
+}
+
+/* Customização da barra de rolagem */
+.gat-cards-carousel::-webkit-scrollbar {
+    height: 8px;
+}
+.gat-cards-carousel::-webkit-scrollbar-track {
+    background: #e9ecef;
+    border-radius: 4px;
+}
+.gat-cards-carousel::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+.gat-cards-carousel::-webkit-scrollbar-thumb:hover {
+    background: #f56613; /* Laranja ao passar o mouse na barra */
+}
+
+/* O Card  */
+.gat-card-item {
+    background: white;
+    min-width: 280px; /* Garante que os cards não fiquem esmagados */
+    max-width: 280px;
+    padding: 25px;
+    border-radius: 0px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-decoration: none; /* Remove o sublinhado do link */
+    display: flex;
+    flex-direction: column;
+    border-left: 4px solid #002c72; /* Linha azul no topo */
+    transition: transform 0.2s, border-color 0.2s;
+    flex-shrink: 0; 
+}
+
+.gat-card-item:hover {
+    transform: translateY(-5px); /* Efeito de pular suavemente */
+    border-top-color: #f56613; /* A linha do topo fica laranja */
+}
+
+.gat-card-title {
+    color: #FF5A26; 
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 0.2s;
+}
+
+.gat-card-item:hover .gat-card-title {
+    color: #f56613; /* O título também fica laranja no hover */
+}
+
+.gat-card-desc {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
