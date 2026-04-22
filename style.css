@@ -318,7 +318,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Cria duas colunas do mesmo tamanho */
     row-gap: 15px;    /* Espaço vertical entre as linhas */
-    column-gap: 0px; /* Espaço horizontal entre as duas colunas */
+    column-gap: 10px; /* Espaço horizontal entre as duas colunas */
 }
 
 /* Inferior */
@@ -1063,4 +1063,66 @@ body {
     font-size: 14px;
     color: #666;
     line-height: 1.5;
+}
+
+/* Container das ações do menu  */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 10px; /* Espaço após o último item de menu */
+}
+
+/* Estilo Base das Bolinhas */
+.action-circle {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1.5px solid #002c72;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #002c72;
+    text-decoration: none;
+    padding: 0;
+}
+
+/* Efeito de Hover (Passar o mouse) */
+.action-circle:hover {
+    background-color: #f56613;
+    border-color: #f56613;
+    color: white;
+    transform: scale(1.1);
+}
+
+.action-circle img.icon {
+    width: 20px; /* Tamanho da imagem */
+    height: 20px;
+    object-fit: contain; /* Garante que a imagem não distorça */
+}
+
+/* Ajuste específico para o ícone de lua */
+.action-circle .icon {
+    font-size: 16px;
+    line-height: 1;
+}
+
+/* Remove a linha separadora que você tem no menu para o container de ações */
+.header-actions::after {
+    display: none !important;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
+}
+body.dark-mode .sidebar {
+    background-color: #121212;
+}
+
+body.dark-mode .footer-top {
+    background-color: #121212;
 }
