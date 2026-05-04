@@ -53,7 +53,7 @@ const footerHTML = `
             </div>
 
             <div class="textFooter">
-                <ul>Este Observatório é uma iniciativa do PET-Saúde Informação e Saúde Digital da UFCG, vinculada ao Programa PET-Saúde, do Ministério da Saúde em parceria com o Ministério da Educação.</ul>
+                <p>Este Observatório é uma iniciativa do PET-Saúde Informação e Saúde Digital da UFCG, vinculada ao Programa PET-Saúde, do Ministério da Saúde em parceria com o Ministério da Educação.</p>
             <div>
         </div>
 
