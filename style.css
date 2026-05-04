@@ -149,6 +149,29 @@ body {
     margin-right: 90px;
     flex-basis: 100%;
 }
+/* Estilo do botão "Clique Aqui Para Saber Mais" */
+.btn-saber-mais {
+    display: block; 
+    width: fit-content; 
+    margin: 25px auto 0 auto;
+    
+    padding: 10px 30px;
+    border: 2px solid #f56613;
+    border-radius: 50px;
+    color:  #002c72;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse por cima */
+.btn-saber-mais:hover {
+    background-color: #f56613; 
+    color: white;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(245, 102, 19, 0.2); /
+}
 
 /*GAT6*/
 
