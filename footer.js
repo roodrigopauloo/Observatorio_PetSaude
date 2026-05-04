@@ -51,15 +51,10 @@ const footerHTML = `
                     <li><a href="https://www.instagram.com/pet_saude_digital_ufcg" target="_blank">Instagram</a></li>
                 </ul>
             </div>
-        </div>
 
-        <div class="footer-bottom">
-            <div class="footer-bottom-content">
-                <span class="copyright">
-                    &copy; <span id="ano-atual"></span> Observatório PetSaúde Digital.
-                </span>
-                <a href="#" class="privacy-policy">Política de Privacidade</a>
-            </div>
+            <div class="textFooter">
+                <ul>Este Observatório é uma iniciativa do PET-Saúde Informação e Saúde Digital da UFCG, vinculada ao Programa PET-Saúde, do Ministério da Saúde em parceria com o Ministério da Educação.</ul>
+            <div>
         </div>
 
     </footer>  

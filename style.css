@@ -327,32 +327,17 @@ body {
     column-gap: 10px; /* Espaço horizontal entre as duas colunas */
 }
 
-/* Inferior */
+.textFooter{
 
-.footer-bottom {
-    background-color: #1a1a1a; 
-    color: #a0a0a0;
-    padding: 20px 60px;
-}
-
-.footer-bottom-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: #ffffff;
     font-size: 13px;
-    flex-wrap: wrap;
-    gap: 15px;
+    text-align: center;
+    margin-left: -20px;
+    width: 100%;
+    flex-basis: 100%;
+    margin-top: 10px;
 }
 
-.footer-bottom-content a.privacy-policy {
-    color: #a0a0a0;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-bottom-content a.privacy-policy:hover {
-    color: white;
-}
 
 /* Responsividade para Celulares */
 @media (max-width: 768px) {
