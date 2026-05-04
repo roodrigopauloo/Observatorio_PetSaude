@@ -1,5 +1,6 @@
 const menuHTML = `
-    <aside class="sidebar">        
+    <aside class="sidebar">    
+        <img src="UFCG-vetor.svg" alt="LogoUFCG" class="logo-ufcg">    
         <div class="logo-container">
             <img src="logoPet.png" alt="Logo" class="minha-logo">
             <span class="logo-text">Fortalecimento e aprimoramento da Saúde Digital:<br>Educação, Inovação e Gestão para o SUS</span>

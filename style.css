@@ -84,19 +84,25 @@ body {
     width: auto;
 }
 
+.logo-ufcg{
+    height: 70px;
+    margin-left: -50px;
+    width: auto;
+}
+
 .logo-container {
     display: flex;
     align-items: center; 
-    gap: 10px; 
+    gap: 10px;
     margin-bottom: 2px; 
+    margin-left: -135px;
     padding: 0 10px; 
 }
 
 /* Estilo do texto ao lado da logo */
 .logo-text {
-    font-size: 18px;
+    font-size: 16px;
     color: #002c72; 
-    line-height: 1.2;
 }
 
 .main-content {
